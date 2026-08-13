@@ -2,7 +2,7 @@
   "name": "spicelot",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "spicelot",
   "sourceRoot": "apps/spicelot/src",
   "tags": [],
   "targets": {
@@ -25,10 +25,8 @@
         "styles": ["apps/spicelot/src/styles.scss"],
         "scripts": [],
         "server": "apps/spicelot/src/main.server.ts",
-        "prerender": true,
-        "ssr": {
-          "entry": "apps/spicelot/server.ts"
-        }
+        "prerender": false,
+        "ssr": false
       },
       "configurations": {
         "production": {
