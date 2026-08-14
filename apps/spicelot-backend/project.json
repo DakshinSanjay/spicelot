@@ -2,5 +2,16 @@
   "name": "spicelot-backend",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/spicelot-backend/src",
-  "tags": []
+  "tags": [],
+  "targets": {
+    "serve":{
+      "executor": "@nxrocks/nx-spring-boot:run",
+      "options": {
+        "root": "apps/spicelot-backend",
+        "args":[
+          "-Dspring-boot.run.profiles=local"
+        ]
+      }
+    }
+  }
 }
